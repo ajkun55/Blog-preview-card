@@ -6,31 +6,35 @@
     --fw-l:500; --fw-b:700;
 }
 body{
-    width: 100;height: 100vh;margin: 0;
+    width: 100%;height: 906px;margin: 0;
     font-size: 16px;
     font-family: "Figtree";
     background-color: var(--clr-Yellow);
 }
 .container{
     background-color: var(--clr-White);
-    width: 26%;
-    height: 80%; 
-    padding-left: 1.5rem;
-    position: absolute; left: 50%;top: 50%;transform: translate(-50%,-50%);
-    display: flex;flex-direction: column;
+    width: 380px; margin: 220px auto;
+    height: 520px; 
+    padding-left: 1.2rem;padding-right: 1.2rem;
+  /*   position: absolute; left: 50%;top: 50%;transform: translate(-50%,-50%);
+ */   display: flex;flex-direction: column;
+    justify-content: center;
     border-radius: 2rem;
     border-top: solid;border-left: solid;
     border-bottom: 0.6rem solid;border-right: 0.6rem solid;
 }
 .bgp{
-    margin: 1.5rem 0;  
+    margin: 1.2rem 0;  
+    height: 44%; 
 }
-.bgp object{
-    border-radius: 1rem; width: 95%;
+.bgp img{
+    border-radius: 1rem; width: 100%;    
 }
 button{
     background: var(--clr-Yellow); border: none;
-    padding: 0.5rem 1rem; border-radius: 0.4rem;
+    padding: 0.5rem 1rem; 
+    border-radius: 0.4rem;
+    margin-top: -1rem;
     font-weight: var(--fw-b);
 }
 .time p{
@@ -39,7 +43,7 @@ button{
 h1{
     font-weight: var(--fw-b);
     font-size: 1.7rem;
-    margin: 0;
+    margin: -0.4rem 0;
 }
 h1:hover{
     color: var(--clr-Yellow);
@@ -52,7 +56,7 @@ h1:hover{
 }
 
 .author{
-    display: flex; gap: 1rem;
+    display: flex; gap: 1rem; margin-bottom: 1.2rem;
 }
 .author object{
     width: 3rem;height: auto;
@@ -62,12 +66,12 @@ h1:hover{
 }
 
 .attribution{
-    position: absolute; left: 50%;bottom: 1rem;transform: translate(-50%,-50%);
+   display: flex;justify-content: center;
 }
 
 @media (width < 450px){
     body{
-        font-size: 12px;
+        font-size: 12px;height: 100vh;
     }
     .container{
         width: 80%;
@@ -76,9 +80,6 @@ h1:hover{
     }
     h1{
         font-size: 1.3rem;
-    }
-    .bgp {
-        
     }
 }
 @media (450px < width < 750px){
