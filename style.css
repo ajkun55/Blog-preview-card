@@ -1,0 +1,87 @@
+:root{
+    --clr-Yellow: hsl(47, 88%, 63%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Grey: hsl(0, 0%, 50%);
+    --clr-Black: hsl(0, 0%, 7%);
+    --fw-l:500; --fw-b:700;
+}
+body{
+    width: 100;height: 100vh;margin: 0;
+    font-size: 16px;
+    font-family: "Figtree";
+    background-color: var(--clr-Yellow);
+}
+.container{
+    background-color: var(--clr-White);
+    width: 26%;
+    height: 80%; 
+    padding-left: 1.5rem;
+    position: absolute; left: 50%;top: 50%;transform: translate(-50%,-50%);
+    display: flex;flex-direction: column;
+    border-radius: 2rem;
+    border-top: solid;border-left: solid;
+    border-bottom: 0.6rem solid;border-right: 0.6rem solid;
+}
+.bgp{
+    margin: 1.5rem 0;  
+}
+.bgp object{
+    border-radius: 1rem; width: 95%;
+}
+button{
+    background: var(--clr-Yellow); border: none;
+    padding: 0.5rem 1rem; border-radius: 0.4rem;
+    font-weight: var(--fw-b);
+}
+.time p{
+    font-weight: var(--fw-l);
+}
+h1{
+    font-weight: var(--fw-b);
+    font-size: 1.7rem;
+    margin: 0;
+}
+h1:hover{
+    color: var(--clr-Yellow);
+    cursor: pointer;
+}
+
+.description{
+    font-weight: var(--fw-l);width: 90%;
+    color: var(--clr-Grey);
+}
+
+.author{
+    display: flex; gap: 1rem;
+}
+.author object{
+    width: 3rem;height: auto;
+}
+.author p{
+    font-weight: var(--fw-b);
+}
+
+.attribution{
+    position: absolute; left: 50%;bottom: 1rem;transform: translate(-50%,-50%);
+}
+
+@media (width < 450px){
+    body{
+        font-size: 12px;
+    }
+    .container{
+        width: 80%;
+        height: 65%;
+        padding-left: 0.8rem;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    .bgp {
+        
+    }
+}
+@media (450px < width < 750px){
+    .container{
+        width: 50%;}
+}
